@@ -42,28 +42,28 @@ const usps = [
 
 export default function WhyUs() {
   return (
-    <section className="py-20 md:py-28 bg-[#2D3142]">
+    <section className="py-20 md:py-28 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Why Choose Us"
-          heading="The Global Equipments Advantage"
-          subtext="We've been supplying industrial equipment across MP since 2017. Here's what sets us apart."
-          light
+          heading="The Jay Engineering Advantage"
+          subtext="We've been supplying industrial equipment across MP since 2014. Here's what sets us apart."
+          light={false}
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {usps.map((usp) => (
             <div
               key={usp.title}
-              className="bg-[#1A1A2E] p-6 border-l-4 border-[#F5A623] shadow-[4px_4px_0px_#0D0D1A]"
+              className="bg-white p-6 border-l-4 border-[#F5A623] shadow-lg hover:shadow-xl transition-shadow"
             >
               <div className="text-[#F5A623] mb-4">{usp.icon}</div>
               <h3
-                className="text-white font-black uppercase text-lg mb-2"
+                className="text-[#1A1A2E] font-black uppercase text-lg mb-2"
                 style={{ fontFamily: "var(--font-barlow-condensed)" }}
               >
                 {usp.title}
               </h3>
-              <p className="text-gray-400 text-sm leading-relaxed">{usp.desc}</p>
+              <p className="text-gray-600 text-sm leading-relaxed">{usp.desc}</p>
             </div>
           ))}
         </div>

@@ -26,14 +26,14 @@ export const categories: Category[] = [
     slug: "material-handling-equipments",
     name: "Material Handling Equipments",
     description: "Stackers, electric cranes, and weighing pallet trucks for industrial operations.",
-    image: "/images/categories/material-handling-equipments.webp",
+    image: "/images/categories/material-handling-equipments.jpeg",
     productCount: 5,
   },
   {
     slug: "hydraulic-drum-lifter",
     name: "Hydraulic Drum Lifters",
     description: "Drum lifters, tilters, and palletizers for safe drum handling and transport.",
-    image: "/images/categories/hydraulic-drum-lifter.webp",
+    image: "/images/categories/hydraulic-drum-lifter.jpeg",
     productCount: 4,
   },
   {
@@ -47,14 +47,14 @@ export const categories: Category[] = [
     slug: "office-furniture",
     name: "Office Furniture",
     description: "Industrial-grade office almirahs, file cabinets, lockers, and bookcases.",
-    image: "/images/categories/office-furniture.webp",
+    image: "/images/categories/office-furniture.jpeg",
     productCount: 4,
   },
   {
     slug: "nylon-wheel",
     name: "Nylon Wheels",
     description: "Replacement drive and load wheels for pallet trucks and material handling equipment.",
-    image: "/images/categories/nylon-wheel.webp",
+    image: "/images/categories/hand-pallet-truck.webp",
     productCount: 2,
   },
 ];

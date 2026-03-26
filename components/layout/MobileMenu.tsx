@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from "react";
 import Link from "next/link";
-import { categories } from "@/data/categories";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -84,7 +83,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           className="text-white font-black text-xl uppercase tracking-wider"
           style={{ fontFamily: "var(--font-barlow-condensed)" }}
         >
-          GLOBAL <span className="text-[#F5A623]">EQUIPMENTS</span>
+          JAY <span className="text-[#F5A623]">ENGINEERING</span>
         </span>
         <button
           ref={closeRef}
@@ -114,26 +113,6 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             </li>
           ))}
         </ul>
-
-        {/* Categories sub-list */}
-        <div className="mt-8">
-          <p className="text-[#F5A623] text-xs uppercase tracking-[0.2em] font-semibold mb-4">
-            Product Categories
-          </p>
-          <ul className="space-y-2">
-            {categories.map((cat) => (
-              <li key={cat.slug}>
-                <Link
-                  href={`/products/${cat.slug}/`}
-                  onClick={onClose}
-                  className="block text-gray-300 text-sm hover:text-[#F5A623] transition-colors py-1"
-                >
-                  {cat.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
       </nav>
 
       {/* Footer CTA */}

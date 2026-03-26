@@ -25,7 +25,7 @@ export interface WhatsAppFormData {
 
 export function buildWhatsAppLink(data: WhatsAppFormData): string {
   const text = [
-    "Hi Global Equipments,",
+    "Hi Jay Engineering,",
     `I am interested in: ${data.productName ?? "General Inquiry"}`,
     `Name: ${data.name}`,
     `Phone: ${data.phone}`,
@@ -36,16 +36,16 @@ export function buildWhatsAppLink(data: WhatsAppFormData): string {
 
 export function buildMailtoLink(data: WhatsAppFormData): string {
   const subject = encodeURIComponent(
-    `Inquiry: ${data.productName ?? "General Inquiry"} - Global Equipments`
+    `Inquiry: ${data.productName ?? "General Inquiry"} - Jay Engineering`
   );
   const body = encodeURIComponent(
     [
-      `Hi Global Equipments,`,
+      `Hi Jay Engineering,`,
       `I am interested in: ${data.productName ?? "General Inquiry"}`,
       `Name: ${data.name}`,
       `Phone: ${data.phone}`,
       `Message: ${data.message}`,
     ].join("\n")
   );
-  return `mailto:info@globalequipments.net?subject=${subject}&body=${body}`;
+  return `mailto:info@jayengineering.in?subject=${subject}&body=${body}`;
 }

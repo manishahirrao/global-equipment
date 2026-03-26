@@ -1,11 +1,13 @@
 "use client";
 
+import type { Metadata } from "next";
 import { useState, useEffect } from "react";
 import { products } from "@/data/products";
 import { categories } from "@/data/categories";
 import type { CategorySlug } from "@/types";
 import ProductCard from "@/components/ui/ProductCard";
 import SectionHeading from "@/components/ui/SectionHeading";
+import InquiryCTABanner from "@/components/sections/InquiryCTABanner";
 
 const ALL = "all";
 
@@ -35,7 +37,7 @@ export default function ProductsPage() {
   return (
     <>
       {/* Hero */}
-      <div className="bg-[#1A1A2E] py-16 md:py-20">
+      <div className="bg-gradient-to-r from-gray-50 to-gray-100 py-16 md:py-20 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Catalogue"
@@ -64,7 +66,7 @@ export default function ProductsPage() {
                 : "bg-[#F4F4F0] text-[#1A1A2E] hover:bg-[#E2E2DC]"
             }`}
           >
-            All
+            All Products
           </button>
           {categories.map((cat) => (
             <button
@@ -83,6 +85,12 @@ export default function ProductsPage() {
           ))}
         </div>
 
+        {/* Results count */}
+        <p className="text-sm text-[#6B7280] mb-6">
+          Showing {filtered.length} {filtered.length === 1 ? "product" : "products"}
+          {active !== ALL && ` in ${categories.find(c => c.slug === active)?.name}`}
+        </p>
+
         {/* Product grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {filtered.map((product) => (
@@ -94,6 +102,8 @@ export default function ProductsPage() {
           <p className="text-center text-[#6B7280] py-20">No products found.</p>
         )}
       </div>
+
+      <InquiryCTABanner />
     </>
   );
 }

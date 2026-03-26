@@ -21,14 +21,14 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Industrial Equipment Supplier Bhopal | Global Equipments",
-    template: "%s | Global Equipments",
+    default: "Industrial Equipment Supplier Bhopal | Jay Engineering",
+    template: "%s | Jay Engineering",
   },
   description:
-    "Global Equipments — Trusted supplier of hand pallet trucks, hydraulic scissor lifts, storage racks & material handling equipment in Bhopal, Madhya Pradesh.",
-  metadataBase: new URL("https://globalequipments.net"),
+    "Jay Engineering — Trusted supplier of hand pallet trucks, hydraulic scissor lifts, storage racks & material handling equipment in Bhopal, Madhya Pradesh.",
+  metadataBase: new URL("https://jayengineering.in"),
   openGraph: {
-    siteName: "Global Equipments",
+    siteName: "Jay Engineering",
     locale: "en_IN",
     type: "website",
   },

@@ -4,9 +4,9 @@ import InquiryCTABanner from "@/components/sections/InquiryCTABanner";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Global Equipments offers hand pallet truck repair, delivery & installation, and AMC support across Madhya Pradesh. Starting at ₹1,000/Project.",
+    "Jay Engineering offers hand pallet truck repair, delivery & installation, and AMC support across Madhya Pradesh. Starting at ₹1,000/Project.",
   openGraph: {
-    title: "Services | Global Equipments Bhopal",
+    title: "Services | Jay Engineering Bhopal",
     images: [{ url: "/og/services.jpg", width: 1200, height: 630 }],
   },
 };
@@ -73,18 +73,18 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <div className="bg-[#1A1A2E] py-20">
+      <div className="bg-gradient-to-br from-gray-50 to-gray-100 py-20 border-b-4 border-[#F5A623]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-[#F5A623] text-xs font-semibold uppercase tracking-[0.3em] mb-3">
             After-Sales Support
           </p>
           <h1
-            className="text-white font-black uppercase text-4xl md:text-6xl leading-none"
+            className="text-[#1A1A2E] font-black uppercase text-4xl md:text-6xl leading-none"
             style={{ fontFamily: "var(--font-barlow-condensed)" }}
           >
             Our Services
           </h1>
-          <p className="text-gray-300 mt-4 max-w-xl text-sm">
+          <p className="text-gray-700 mt-4 max-w-xl text-sm">
             We don&apos;t just sell equipment — we support it. Repair, installation, and AMC across
             Madhya Pradesh.
           </p>
@@ -96,9 +96,9 @@ export default function ServicesPage() {
           {services.map((svc) => (
             <article
               key={svc.title}
-              className="bg-white border border-[#E2E2DC] shadow-[4px_4px_0px_#1A1A2E] flex flex-col"
+              className="bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-shadow flex flex-col"
             >
-              <div className="bg-[#1A1A2E] p-6 text-[#F5A623]">{svc.icon}</div>
+              <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 text-[#F5A623] border-b-2 border-[#F5A623]">{svc.icon}</div>
               <div className="p-6 flex flex-col flex-1">
                 <h2
                   className="text-[#1A1A2E] font-black uppercase text-xl mb-1"

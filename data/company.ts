@@ -1,17 +1,18 @@
 import type { CompanyData } from "@/types";
 
 export const company: CompanyData = {
-  name: "Global Equipments",
+  name: "Jay Engineering",
+  legalName: "Shree Engineering",
   phone: "08048962384",
   whatsapp: "918048962384",
-  email: "info@globalequipments.net",
+  email: "info@jayengineering.in",
   address:
-    "S-40, Sheetal Apartment, Mandideep Tehsil Goharganj, Ward No. 17, Raisen, Bhopal – 462046, MP",
-  gst: "23AARFG4367K1ZY",
-  geo: { lat: 23.1125670, lng: 77.5083410 },
+    "Shop No. 03, Near Panjabi Baag, New Ashoka Garden, Ashoka Garden, Bhopal – 462023, Madhya Pradesh",
+  gst: "23ICBPK2892H1ZI",
+  geo: { lat: 23.2599, lng: 77.4126 },
   hours: "Monday – Sunday, 9:00 AM – 7:00 PM",
   stats: [
-    { value: "Est. 2017", label: "Years of Trust" },
+    { value: "Est. 2014", label: "Years of Trust" },
     { value: "36+", label: "Products" },
     { value: "Open 7 Days", label: "Mon – Sun" },
     { value: "MP Coverage", label: "Madhya Pradesh" },
@@ -21,7 +22,7 @@ export const company: CompanyData = {
 export const testimonials = [
   {
     quote:
-      "Global Equipments delivered our pallet trucks on time and the quality is excellent. Highly recommended for any warehouse setup.",
+      "Jay Engineering delivered our pallet trucks on time and the quality is excellent. Highly recommended for any warehouse setup.",
     author: "Rajesh Verma",
     company: "Verma Logistics, Bhopal",
   },

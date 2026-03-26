@@ -2,7 +2,7 @@ import { company } from "@/data/company";
 
 export default function StatsBar() {
   return (
-    <div className="bg-[#1A1A2E] py-6">
+    <div className="bg-gradient-to-r from-[#1A1A2E] to-[#2D3142] py-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-0 md:divide-x md:divide-[#2D3142]">
           {company.stats.map((stat) => (

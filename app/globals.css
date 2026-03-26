@@ -1,15 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  --color-primary: #1a1a2e;
-  --color-secondary: #f5a623;
-  --color-accent: #e84040;
-  --color-surface: #f4f4f0;
-  --color-dark: #0d0d1a;
-  --color-steel: #2d3142;
-  --color-text: #1c1c1c;
-  --color-muted: #6b7280;
-  --color-border: #e2e2dc;
+  /* Light Theme Colors */
+  --color-primary: #ffffff;        /* White background */
+  --color-secondary: #f5a623;      /* Orange accent */
+  --color-accent: #e84040;         /* Red accent */
+  --color-surface: #f8f9fa;        /* Light gray surface */
+  --color-dark: #1a1a2e;           /* Dark for header/footer */
+  --color-steel: #e9ecef;          /* Light steel gray */
+  --color-text: #212529;           /* Dark text */
+  --color-muted: #6c757d;          /* Muted gray text */
+  --color-border: #dee2e6;         /* Light border */
+  --color-header: #1a1a2e;         /* Dark header */
+  --color-footer: #212529;         /* Dark footer */
+  --color-card-bg: #ffffff;        /* White cards */
+  --color-card-border: #e2e2dc;    /* Light border for cards */
+  --color-shadow: rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
 @theme inline {
@@ -31,7 +37,7 @@
 }
 
 body {
-  background-color: var(--color-surface);
+  background-color: #ffffff;
   color: var(--color-text);
   font-family: var(--font-dm-sans), system-ui, sans-serif;
 }
@@ -50,7 +56,7 @@ body {
   z-index: 9999;
   padding: 0.5rem 1rem;
   background: var(--color-secondary);
-  color: var(--color-primary);
+  color: white;
   font-weight: 700;
   text-decoration: none;
 }

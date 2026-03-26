@@ -5,9 +5,9 @@ import InquiryForm from "@/components/ui/InquiryForm";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact Global Equipments in Bhopal, Madhya Pradesh. Send an inquiry via WhatsApp or our contact form. Open Monday–Sunday.",
+    "Contact Jay Engineering in Bhopal, Madhya Pradesh. Send an inquiry via WhatsApp or our contact form. Open Monday–Sunday.",
   openGraph: {
-    title: "Contact Global Equipments | Industrial Equipment Supplier Bhopal",
+    title: "Contact Jay Engineering | Industrial Equipment Supplier Bhopal",
     images: [{ url: "/og/contact.jpg", width: 1200, height: 630 }],
   },
 };
@@ -16,13 +16,14 @@ const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: company.name,
+  legalName: company.legalName,
   telephone: company.phone,
   address: {
     "@type": "PostalAddress",
-    streetAddress: "S-40, Sheetal Apartment, Mandideep Tehsil Goharganj, Ward No. 17",
+    streetAddress: "Shop No. 03, Near Panjabi Baag, New Ashoka Garden, Ashoka Garden",
     addressLocality: "Bhopal",
     addressRegion: "Madhya Pradesh",
-    postalCode: "462046",
+    postalCode: "462023",
     addressCountry: "IN",
   },
   geo: {
@@ -42,13 +43,13 @@ export default function ContactPage() {
       />
 
       {/* Hero */}
-      <div className="bg-[#1A1A2E] py-20">
+      <div className="bg-gradient-to-br from-gray-50 to-gray-100 py-20 border-b-4 border-[#F5A623]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-[#F5A623] text-xs font-semibold uppercase tracking-[0.3em] mb-3">
             Get in Touch
           </p>
           <h1
-            className="text-white font-black uppercase text-4xl md:text-6xl leading-none"
+            className="text-[#1A1A2E] font-black uppercase text-4xl md:text-6xl leading-none"
             style={{ fontFamily: "var(--font-barlow-condensed)" }}
           >
             Contact Us
@@ -66,7 +67,7 @@ export default function ContactPage() {
             >
               Send an Inquiry
             </h2>
-            <div className="bg-white border border-[#E2E2DC] p-6 shadow-[4px_4px_0px_#1A1A2E]">
+            <div className="bg-white border border-gray-200 p-6 shadow-lg">
               <InquiryForm showProductDropdown />
             </div>
           </div>
@@ -143,9 +144,9 @@ export default function ContactPage() {
             </div>
 
             {/* Map */}
-            <div className="w-full h-64 border border-[#E2E2DC] shadow-[4px_4px_0px_#1A1A2E] overflow-hidden">
+            <div className="w-full h-64 border border-gray-200 shadow-lg overflow-hidden rounded-lg">
               <iframe
-                title="Global Equipments location on Google Maps"
+                title="Jay Engineering location on Google Maps"
                 src={`https://maps.google.com/maps?q=${company.geo.lat},${company.geo.lng}&z=15&output=embed`}
                 width="100%"
                 height="100%"
