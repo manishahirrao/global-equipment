@@ -17,7 +17,8 @@ const usps = [
   "Competitive factory-direct pricing",
   "Open Monday to Sunday",
   "Delivery & installation across Madhya Pradesh",
-  "After-sales service and AMC support",
+  "Repair services & genuine spare parts",
+  "AMC support for all equipment",
   "75% response rate on inquiries",
 ];
 
@@ -58,13 +59,12 @@ export default function AboutPage() {
               <p>
                 Jay Engineering (Shree Engineering) was founded in 2014 in Ashoka Garden, Bhopal — the industrial heart of
                 Madhya Pradesh. We started with a simple mission: give factories, warehouses, and
-                SMEs across MP access to quality material handling equipment at fair prices.
+                SMEs across MP access to quality material handling equipment, reliable repair services, and genuine spare parts at fair prices.
               </p>
               <p>
                 Today we trade, retail, and distribute a wide range of industrial equipment including
                 hand pallet trucks, hydraulic scissor lifts, storage racks, drum lifters, goods
-                lifts, and office furniture. We serve clients across Madhya Pradesh with delivery and
-                installation support.
+                lifts, and office furniture. We also provide professional repair and maintenance services for hydraulic equipment, along with a comprehensive inventory of spare parts to minimize your downtime.
               </p>
               <p>
                 As a GST-registered business with a 75% inquiry response rate, we pride ourselves on
@@ -84,7 +84,7 @@ export default function AboutPage() {
             <dl className="space-y-4">
               {[
                 ["Legal Name", "Shree Engineering"],
-                ["Nature", "Trader · Retailer · Distributor · Supplier"],
+                ["Nature", "Trader · Retailer · Distributor · Service Provider"],
                 ["Founded", "2014"],
                 ["Location", "Ashoka Garden, Bhopal, MP"],
                 ["Annual Turnover", "₹26L – ₹50L"],

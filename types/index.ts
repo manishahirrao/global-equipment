@@ -1,12 +1,15 @@
 export type CategorySlug =
   | "hand-pallet-truck"
+  | "forklift"
+  | "stacker"
   | "industrial-storage-racks"
   | "hydraulic-scissor-lift"
   | "material-handling-equipments"
   | "hydraulic-drum-lifter"
   | "goods-lift"
-  | "office-furniture"
-  | "nylon-wheel";
+  | "spare-parts"
+  | "hydraulic-press"
+  | "office-furniture";
 
 export interface Product {
   id: string;
@@ -46,4 +49,12 @@ export interface CompanyData {
   geo: { lat: number; lng: number };
   hours: string;
   stats: Stat[];
+}
+
+export interface Testimonial {
+  quote: string;
+  author: string;
+  company: string;
+  date?: string;
+  source?: string;
 }

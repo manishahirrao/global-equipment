@@ -13,13 +13,21 @@ export const company: CompanyData = {
   hours: "Monday – Sunday, 9:00 AM – 9:00 PM",
   stats: [
     { value: "Est. 2014", label: "Years of Trust" },
-    { value: "36+", label: "Products" },
+    { value: "16+", label: "Products" },
     { value: "Open 7 Days", label: "Mon – Sun" },
     { value: "MP Coverage", label: "Madhya Pradesh" },
   ],
 };
 
 export const testimonials = [
+  {
+    quote:
+      "I had a great experience with Jay Engineering! Their service was impressively quick. I brought in my broken equipment, and they fixed it much faster than expected.",
+    author: "Pradeep Shayesesh",
+    company: "Verified Customer, Bhopal",
+    date: "05 Sept 2025",
+    source: "Justdial.com",
+  },
   {
     quote:
       "Jay Engineering delivered our pallet trucks on time and the quality is excellent. Highly recommended for any warehouse setup.",

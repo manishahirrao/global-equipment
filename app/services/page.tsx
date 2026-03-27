@@ -4,7 +4,7 @@ import InquiryCTABanner from "@/components/sections/InquiryCTABanner";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Jay Engineering offers hand pallet truck repair, delivery & installation, and AMC support across Madhya Pradesh. Starting at ₹1,000/Project.",
+    "Jay Engineering offers equipment repair, genuine spare parts supply, delivery & installation, and AMC support across Madhya Pradesh. Starting at ₹1,000/Project.",
   openGraph: {
     title: "Services | Jay Engineering Bhopal",
     images: [{ url: "/og/services.jpg", width: 1200, height: 630 }],
@@ -19,16 +19,34 @@ const services = [
         <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
       </svg>
     ),
-    title: "Hand Pallet Truck Service & Repair",
+    title: "Equipment Service & Repair",
     price: "₹1,000/Project",
     coverage: "Madhya Pradesh",
     description:
-      "Professional servicing and repair of hand pallet trucks. We diagnose and fix hydraulic issues, wheel replacements, fork repairs, and general maintenance to keep your equipment running at peak performance.",
+      "Professional servicing and repair of hand pallet trucks, hydraulic lifts, and material handling equipment. We diagnose and fix hydraulic issues, wheel replacements, fork repairs, and general maintenance to keep your equipment running at peak performance.",
     features: [
       "Hydraulic system inspection & repair",
       "Wheel and fork replacement",
       "Load capacity testing",
       "Preventive maintenance",
+    ],
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="32" height="32" aria-hidden="true">
+        <path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+      </svg>
+    ),
+    title: "Genuine Spare Parts Supply",
+    price: "Contact for pricing",
+    coverage: "All of Madhya Pradesh",
+    description:
+      "We stock and supply genuine spare parts for all types of material handling equipment — nylon wheels, hydraulic pumps, seals, forks, and more. Fast delivery to minimize your equipment downtime.",
+    features: [
+      "Nylon drive & load wheels",
+      "Hydraulic pumps & cylinders",
+      "Seals, bearings & fasteners",
+      "Fork extensions & accessories",
     ],
   },
   {
@@ -85,14 +103,13 @@ export default function ServicesPage() {
             Our Services
           </h1>
           <p className="text-gray-700 mt-4 max-w-xl text-sm">
-            We don&apos;t just sell equipment — we support it. Repair, installation, and AMC across
-            Madhya Pradesh.
+            Equipment repair, genuine spare parts, installation, and AMC across Madhya Pradesh.
           </p>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {services.map((svc) => (
             <article
               key={svc.title}

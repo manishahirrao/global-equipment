@@ -11,18 +11,13 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <Image
-                src="/images/jay-logo.jpg"
+                src="/images/jay-logo.png"
                 alt="Jay Engineering logo"
-                width={40}
-                height={40}
+                width={144}
+                height={144}
                 className="object-contain"
               />
-              <p
-                className="text-white font-black text-xl uppercase tracking-wider"
-                style={{ fontFamily: "var(--font-barlow-condensed)" }}
-              >
-                JAY <span className="text-[#F5A623]">ENGINEERING</span>
-              </p>
+              
             </div>
             <p className="text-sm leading-relaxed mb-4">
               Trusted industrial equipment supplier in Madhya Pradesh since 2014. Serving factories,

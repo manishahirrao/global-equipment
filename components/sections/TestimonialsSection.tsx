@@ -28,6 +28,12 @@ export default function TestimonialsSection() {
               <footer>
                 <p className="text-[#1A1A2E] font-semibold text-sm">{t.author}</p>
                 <p className="text-[#F5A623] text-xs mt-0.5">{t.company}</p>
+                {t.date && (
+                  <p className="text-gray-500 text-xs mt-1">{t.date}</p>
+                )}
+                {t.source && (
+                  <p className="text-gray-400 text-xs mt-1 italic">Source: {t.source}</p>
+                )}
               </footer>
             </blockquote>
           ))}

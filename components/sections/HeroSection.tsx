@@ -15,7 +15,7 @@ export default function HeroSection() {
       />
 
       {/* Light overlay with subtle pattern */}
-      <div className="absolute inset-0 bg-white/60" aria-hidden="true" />
+      {/* <div className="absolute inset-0 bg-white/20" aria-hidden="true" /> */}
 
       {/* Grid-line SVG overlay */}
       <div
@@ -41,13 +41,13 @@ export default function HeroSection() {
             fontSize: "clamp(2.5rem, 8vw, 5rem)",
           }}
         >
-          TRUSTED INDUSTRIAL
+          INDUSTRIAL EQUIPMENT
           <br />
-          <span className="text-[#F5A623]">EQUIPMENT SUPPLIER</span>
+          <span className="text-[#F5A623]">SALES · SERVICE · SPARES</span>
         </h1>
 
         <p className="text-gray-700 text-base md:text-lg mb-10 max-w-2xl mx-auto">
-          Hand Pallet Trucks · Scissor Lifts · Storage Racks · Material Handling
+          Pallet Trucks · Trolleys · Forklifts · Stackers · Repair Services · Spare Parts
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

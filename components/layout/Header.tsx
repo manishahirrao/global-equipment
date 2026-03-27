@@ -25,19 +25,14 @@ export default function Header() {
             aria-label="Jay Engineering — Home"
           >
             <Image
-              src="/images/jay-logo.jpg"
+              src="/images/jay-logo.png"
               alt="Jay Engineering logo"
-              width={44}
-              height={44}
+              width={184}
+              height={184}
               className="object-contain"
               priority
             />
-            <span
-              className="text-[#1A1A2E] font-black text-lg uppercase tracking-wider hidden sm:inline"
-              style={{ fontFamily: "var(--font-barlow-condensed)" }}
-            >
-              JAY <span className="text-[#F5A623]">ENGINEERING</span>
-            </span>
+          
           </Link>
 
           {/* Desktop nav */}
