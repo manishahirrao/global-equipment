@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#2D3142] text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
@@ -36,9 +36,29 @@ export default function Footer() {
                 { href: "/", label: "Home" },
                 { href: "/about/", label: "About Us" },
                 { href: "/services/", label: "Services" },
-                { href: "/products/", label: "Spare Parts" },
+                { href: "/products/", label: "Product" },
                 { href: "/gallery/", label: "Gallery" },
                 { href: "/contact/", label: "Contact" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-sm hover:text-[#F5A623] transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Legal */}
+          <div>
+            <h3 className="text-white text-xs font-semibold uppercase tracking-[0.2em] mb-4">
+              Legal
+            </h3>
+            <ul className="space-y-2">
+              {[
+                { href: "/privacy-policy/", label: "Privacy Policy" },
+                { href: "/cookie-policy/", label: "Cookie Policy" },
+                { href: "/terms-and-conditions/", label: "Terms & Conditions" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-sm hover:text-[#F5A623] transition-colors">
@@ -84,7 +104,17 @@ export default function Footer() {
       <div className="border-t border-[#3D4152] py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs">
           <p>© 2026 Jay Engineering · GST: {company.gst}</p>
-          <p>Made in India 🇮🇳</p>
+          <p>
+            Designed & Created by{" "}
+            <a
+              href="https://adwikindia.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#F5A623] hover:underline"
+            >
+              AdwikIndia
+            </a>
+          </p>
         </div>
       </div>
     </footer>
