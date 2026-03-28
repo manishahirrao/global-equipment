@@ -5,18 +5,19 @@ import InquiryForm from "@/components/ui/InquiryForm";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact Jay Engineering in Bhopal, Madhya Pradesh. Send an inquiry via WhatsApp or our contact form. Open Monday–Sunday.",
+    "Contact Jay Engineering in Bhopal for material handling equipment repair services. Send an inquiry via WhatsApp or our contact form. Open Monday–Sunday, 9 AM - 9 PM.",
   openGraph: {
-    title: "Contact Jay Engineering | Industrial Equipment Supplier Bhopal",
+    title: "Contact Jay Engineering | Equipment Repair Service Bhopal",
     images: [{ url: "/og/contact.jpg", width: 1200, height: 630 }],
   },
 };
 
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "AutoRepair",
   name: company.name,
   legalName: company.legalName,
+  description: "Professional repair and maintenance services for material handling equipment in Bhopal, Madhya Pradesh.",
   telephone: company.phone,
   address: {
     "@type": "PostalAddress",
@@ -31,7 +32,8 @@ const localBusinessJsonLd = {
     latitude: company.geo.lat,
     longitude: company.geo.lng,
   },
-  openingHours: "Mo-Su 09:00-19:00",
+  openingHours: "Mo-Su 09:00-21:00",
+  priceRange: "₹₹",
 };
 
 export default function ContactPage() {
@@ -54,6 +56,9 @@ export default function ContactPage() {
           >
             Contact Us
           </h1>
+          <p className="text-gray-700 mt-4 max-w-xl text-sm">
+            Need equipment repair or spare parts? Contact us for expert service across Bhopal & Madhya Pradesh.
+          </p>
         </div>
       </div>
 
@@ -62,11 +67,14 @@ export default function ContactPage() {
           {/* Inquiry Form */}
           <div>
             <h2
-              className="text-[#1A1A2E] font-black uppercase text-2xl mb-6"
+              className="text-[#1A1A2E] font-black uppercase text-2xl mb-2"
               style={{ fontFamily: "var(--font-barlow-condensed)" }}
             >
-              Send an Inquiry
+              Request Repair Service
             </h2>
+            <p className="text-sm text-[#6B7280] mb-6">
+              Fill out the form below and we'll get back to you with a quote for your equipment repair or spare parts requirement.
+            </p>
             <div className="bg-white border border-gray-200 p-6 shadow-lg">
               <InquiryForm showProductDropdown />
             </div>
@@ -76,11 +84,14 @@ export default function ContactPage() {
           <div className="space-y-8">
             <div>
               <h2
-                className="text-[#1A1A2E] font-black uppercase text-2xl mb-6"
+                className="text-[#1A1A2E] font-black uppercase text-2xl mb-2"
                 style={{ fontFamily: "var(--font-barlow-condensed)" }}
               >
                 Contact Information
               </h2>
+              <p className="text-sm text-[#6B7280] mb-6">
+                Visit our workshop or reach out for repair services and spare parts.
+              </p>
 
               <dl className="space-y-5">
                 <div className="flex gap-4">
@@ -99,9 +110,10 @@ export default function ContactPage() {
                     </svg>
                   </dt>
                   <dd>
-                    <a href={`tel:${company.phone}`} className="text-sm text-[#1C1C1C] hover:text-[#F5A623] transition-colors">
+                    <a href={`tel:${company.phone}`} className="text-sm text-[#1C1C1C] hover:text-[#F5A623] transition-colors font-semibold">
                       {company.phone}
                     </a>
+                    <p className="text-xs text-[#6B7280] mt-1">Call for immediate assistance</p>
                   </dd>
                 </div>
 
@@ -120,6 +132,7 @@ export default function ContactPage() {
                     >
                       Chat on WhatsApp
                     </a>
+                    <p className="text-xs text-[#6B7280] mt-1">Quick response for repair inquiries</p>
                   </dd>
                 </div>
 
@@ -129,7 +142,10 @@ export default function ContactPage() {
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
                     </svg>
                   </dt>
-                  <dd className="text-sm text-[#1C1C1C]">{company.hours}</dd>
+                  <dd>
+                    <p className="text-sm text-[#1C1C1C] font-semibold">{company.hours}</p>
+                    <p className="text-xs text-[#6B7280] mt-1">Open 7 days a week</p>
+                  </dd>
                 </div>
 
                 <div className="flex gap-4">
@@ -138,9 +154,41 @@ export default function ContactPage() {
                       <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clipRule="evenodd" />
                     </svg>
                   </dt>
-                  <dd className="text-sm text-[#1C1C1C]">GST: {company.gst}</dd>
+                  <dd>
+                    <p className="text-sm text-[#1C1C1C]">GST: {company.gst}</p>
+                    <p className="text-xs text-[#6B7280] mt-1">GST registered business</p>
+                  </dd>
                 </div>
               </dl>
+            </div>
+
+            {/* Services highlight */}
+            <div className="bg-amber-50 border-l-4 border-[#F5A623] p-6">
+              <h3 className="text-[#1A1A2E] font-bold text-sm uppercase tracking-wide mb-3">
+                Our Services
+              </h3>
+              <ul className="space-y-2 text-sm text-[#6B7280]">
+                <li className="flex items-start gap-2">
+                  <span className="text-[#F5A623] mt-1">•</span>
+                  <span>Trolley Repair & Service</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#F5A623] mt-1">•</span>
+                  <span>Hand Pallet Truck Repair</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#F5A623] mt-1">•</span>
+                  <span>Hydraulic Equipment Repair</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#F5A623] mt-1">•</span>
+                  <span>Genuine Spare Parts Supply</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#F5A623] mt-1">•</span>
+                  <span>AMC & Preventive Maintenance</span>
+                </li>
+              </ul>
             </div>
 
             {/* Map */}

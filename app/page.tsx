@@ -3,19 +3,19 @@ import HeroSection from "@/components/sections/HeroSection";
 import StatsBar from "@/components/ui/StatsBar";
 import CategoriesGrid from "@/components/sections/CategoriesGrid";
 import WhyUs from "@/components/sections/WhyUs";
-import FeaturedProducts from "@/components/sections/FeaturedProducts";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
+import FAQSection from "@/components/sections/FAQSection";
 import InquiryCTABanner from "@/components/sections/InquiryCTABanner";
 import { company } from "@/data/company";
 
 export const metadata: Metadata = {
-  title: "Industrial Equipment Supplier Bhopal | Jay Engineering",
+  title: "Material Handling Equipment Repair & Service Bhopal | Jay Engineering",
   description:
-    "Jay Engineering (Shree Engineering) — Trusted supplier of hand pallet trucks, hydraulic scissor lifts, storage racks & material handling equipment in Bhopal, Madhya Pradesh. Est. 2014.",
+    "Jay Engineering (Shree Engineering) — Expert repair & service for trolleys, hand pallet trucks, hydraulic lifts & material handling equipment in Bhopal, Madhya Pradesh. Est. 2014.",
   openGraph: {
-    title: "Industrial Equipment Supplier Bhopal | Jay Engineering",
+    title: "Material Handling Equipment Repair & Service Bhopal | Jay Engineering",
     description:
-      "Trusted B2B industrial equipment supplier in Madhya Pradesh. Hand pallet trucks, scissor lifts, storage racks & more.",
+      "Expert repair & maintenance services for trolleys, hand pallet trucks, hydraulic equipment & material handling machines in Bhopal, MP.",
     url: "https://jayengineering.in",
     images: [{ url: "/og/home.jpg", width: 1200, height: 630 }],
   },
@@ -23,11 +23,11 @@ export const metadata: Metadata = {
 
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "AutoRepair",
   name: company.name,
   legalName: company.legalName,
   description:
-    "Trader, retailer, and distributor of industrial material handling equipment, storage racks, hydraulic lifts, and office furniture in Madhya Pradesh.",
+    "Professional repair and maintenance services for material handling equipment, trolleys, hand pallet trucks, hydraulic lifts, and industrial equipment in Bhopal, Madhya Pradesh.",
   url: "https://jayengineering.in",
   telephone: company.phone,
   address: {
@@ -43,9 +43,10 @@ const localBusinessJsonLd = {
     latitude: company.geo.lat,
     longitude: company.geo.lng,
   },
-  openingHours: "Mo-Su 09:00-19:00",
+  openingHours: "Mo-Su 09:00-21:00",
   taxID: company.gst,
   foundingDate: "2014",
+  priceRange: "₹₹",
 };
 
 export default function HomePage() {
@@ -59,8 +60,8 @@ export default function HomePage() {
       <StatsBar />
       <CategoriesGrid />
       <WhyUs />
-      <FeaturedProducts />
       <TestimonialsSection />
+      <FAQSection />
       <InquiryCTABanner />
     </>
   );

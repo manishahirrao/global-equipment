@@ -1,9 +1,19 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function NotFound() {
   return (
-    <div className="min-h-[60vh] flex items-center justify-center bg-[#F4F4F0]">
-      <div className="text-center px-4">
+    <div className="relative min-h-[60vh] flex items-center justify-center bg-[#F4F4F0] overflow-hidden">
+      {/* Background image */}
+      <Image
+        src="/images/categories/stacker.jpeg"
+        alt="Background"
+        fill
+        className="object-cover opacity-10"
+        sizes="100vw"
+      />
+      
+      <div className="relative z-10 text-center px-4">
         <p
           className="text-[#F5A623] font-black text-8xl leading-none mb-4"
           style={{ fontFamily: "var(--font-barlow-condensed)" }}

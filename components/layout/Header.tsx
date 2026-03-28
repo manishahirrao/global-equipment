@@ -3,16 +3,27 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import MobileMenu from "./MobileMenu";
 
 const navLinks = [
+  { href: "/", label: "Home" },
   { href: "/about/", label: "About" },
+  { href: "/products/", label: "Product" },
   { href: "/services/", label: "Services" },
   { href: "/contact/", label: "Contact" },
 ];
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (href: string) => {
+    if (href === "/") {
+      return pathname === "/";
+    }
+    return pathname.startsWith(href);
+  };
 
   return (
     <>
@@ -32,25 +43,24 @@ export default function Header() {
               className="object-contain"
               priority
             />
-          
           </Link>
 
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-6" aria-label="Main navigation">
-            <Link
-              href="/products/"
-              className="text-gray-700 hover:text-[#F5A623] text-xs uppercase tracking-[0.15em] font-semibold transition-colors"
-            >
-              Products
-            </Link>
-
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-700 hover:text-[#F5A623] text-xs uppercase tracking-[0.15em] font-semibold transition-colors"
+                className={`text-xs uppercase tracking-[0.15em] font-semibold transition-colors relative ${
+                  isActive(link.href)
+                    ? "text-[#F5A623]"
+                    : "text-gray-700 hover:text-[#F5A623]"
+                }`}
               >
                 {link.label}
+                {isActive(link.href) && (
+                  <span className="absolute -bottom-[17px] left-0 right-0 h-0.5 bg-[#F5A623]" aria-hidden="true" />
+                )}
               </Link>
             ))}
 

@@ -26,22 +26,22 @@ export interface WhatsAppFormData {
 export function buildWhatsAppLink(data: WhatsAppFormData): string {
   const text = [
     "Hi Jay Engineering,",
-    `I am interested in: ${data.productName ?? "General Inquiry"}`,
+    `I need repair service / spare parts for: ${data.productName ?? "General Inquiry"}`,
     `Name: ${data.name}`,
     `Phone: ${data.phone}`,
     `Message: ${data.message}`,
   ].join("\n");
-  return `https://wa.me/918048962384?text=${encodeURIComponent(text)}`;
+  return `https://wa.me/917383560676?text=${encodeURIComponent(text)}`;
 }
 
 export function buildMailtoLink(data: WhatsAppFormData): string {
   const subject = encodeURIComponent(
-    `Inquiry: ${data.productName ?? "General Inquiry"} - Jay Engineering`
+    `Repair Service Inquiry: ${data.productName ?? "General Inquiry"} - Jay Engineering`
   );
   const body = encodeURIComponent(
     [
       `Hi Jay Engineering,`,
-      `I am interested in: ${data.productName ?? "General Inquiry"}`,
+      `I need repair service / spare parts for: ${data.productName ?? "General Inquiry"}`,
       `Name: ${data.name}`,
       `Phone: ${data.phone}`,
       `Message: ${data.message}`,

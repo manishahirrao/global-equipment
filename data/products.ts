@@ -1,7 +1,7 @@
 import type { Product } from "@/types";
 
 export const products: Product[] = [
-  // ── Hand Pallet Truck & Trolley (MAIN FOCUS) ───────────────────────────────
+  // ── Hand Pallet Truck & Trolley (SPARE PARTS) ──────────────────────────────
   {
     id: "hpt-001",
     slug: "hand-pallet-truck-2500kg",
@@ -10,7 +10,7 @@ export const products: Product[] = [
     price: 12000,
     priceUnit: "piece",
     specs: { Capacity: "2500 kg", Operation: "Hand Operated", Type: "Standard" },
-    description: "Heavy-duty hand pallet truck for industrial material handling.",
+    description: "Replacement hand pallet truck for industrial material handling. Available for repair services.",
     images: ["/images/products/hand-pallet-truck.jpeg"],
     badge: "Bestseller",
     inStock: true,
@@ -23,6 +23,7 @@ export const products: Product[] = [
     price: 35000,
     priceUnit: "piece",
     specs: { Capacity: "1200 kg", Wheels: "Nylon", Feature: "Weighing Scale" },
+    description: "Replacement pallet truck with integrated weighing scale. Repair services available.",
     images: ["/images/products/hand-pallet-truck-weighing-scale.webp"],
     inStock: true,
   },
@@ -34,6 +35,7 @@ export const products: Product[] = [
     price: 35000,
     priceUnit: "piece",
     specs: { Capacity: "1000–1500 kg", Operation: "Hand Operated", Type: "High Lift" },
+    description: "Replacement high lift pallet truck. We also repair and service existing units.",
     images: ["/images/products/high-lift-pallet-truck.jpeg"],
     inStock: true,
   },
@@ -45,6 +47,7 @@ export const products: Product[] = [
     price: 6000,
     priceUnit: "piece",
     specs: { Capacity: "100+ kg", Material: "Stainless Steel", Type: "Trolley" },
+    description: "Replacement drum lifter trolley. Repair services for wheel replacement and structural repairs available.",
     images: ["/images/products/drum-lifter-trolley.webp"],
     inStock: true,
   },
@@ -56,11 +59,12 @@ export const products: Product[] = [
     price: 5500,
     priceUnit: "piece",
     specs: { Dimensions: "1455×650×800 mm", Wheels: "3", Type: "Trolley" },
+    description: "Replacement three-wheel drum lifter trolley. We repair and service all trolley types.",
     images: ["/images/products/three-wheel-drum-lifter-trolley.webp"],
     inStock: true,
   },
 
-  // ── Forklift (MAIN FOCUS) ──────────────────────────────────────────────────
+  // ── Forklift (REPAIR SERVICES) ─────────────────────────────────────────────
   {
     id: "fl-001",
     slug: "hydraulic-fork-lift-truck-5-ton",
@@ -69,13 +73,13 @@ export const products: Product[] = [
     price: "quote",
     priceUnit: "piece",
     specs: { Capacity: "5 Ton", Material: "Mild Steel", Type: "Hydraulic" },
-    description: "Heavy-duty hydraulic forklift for industrial material handling.",
+    description: "We provide professional forklift repair and maintenance services. Hydraulic system repairs, spare parts available.",
     images: ["/images/products/hydraulic-fork-lift-truck.jpg"],
-    badge: "Bestseller",
+    badge: "Repair Service",
     inStock: true,
   },
 
-  // ── Stacker (MAIN FOCUS) ───────────────────────────────────────────────────
+  // ── Stacker (REPAIR SERVICES & SPARE PARTS) ────────────────────────────────
   {
     id: "st-001",
     slug: "manual-hydraulic-stacker-1000kg",
@@ -84,7 +88,7 @@ export const products: Product[] = [
     price: 45000,
     priceUnit: "piece",
     specs: { Capacity: "700-1200 kg", Operation: "Manual", "Lift Height": "1600mm" },
-    description: "Manual hydraulic stacker for warehouse operations.",
+    description: "Replacement manual hydraulic stacker. We also repair and service existing stackers.",
     images: ["/images/products/manual-hydraulic-stacker.webp"],
     badge: "Popular",
     inStock: true,
@@ -97,12 +101,12 @@ export const products: Product[] = [
     price: 48000,
     priceUnit: "piece",
     specs: { Capacity: "700-1200 kg", Operation: "Manual", Type: "Drum Stacker" },
-    description: "Specialized drum stacker for safe drum handling.",
+    description: "Replacement drum stacker. Repair services for hydraulic systems and spare parts available.",
     images: ["/images/products/manual-hydraulic-drum-stacker.webp"],
     inStock: true,
   },
 
-  // ── Material Handling Equipment ────────────────────────────────────────────
+  // ── Material Handling Equipment (REPAIR SERVICES) ──────────────────────────
   {
     id: "mhe-001",
     slug: "hydraulic-order-picker",
@@ -111,6 +115,7 @@ export const products: Product[] = [
     price: "quote",
     priceUnit: "piece",
     specs: { Capacity: "1200 KG", Type: "Order Picker" },
+    description: "We repair and service hydraulic order pickers. Spare parts and maintenance available.",
     images: ["/images/products/hydraulic-order-picker.jpg"],
     inStock: true,
   },
@@ -122,6 +127,7 @@ export const products: Product[] = [
     price: "quote",
     priceUnit: "piece",
     specs: { Capacity: "20000 Kg", Material: "Mild Steel", Type: "Conveyor" },
+    description: "Hydraulic conveyor repair and maintenance services. Spare parts available.",
     images: ["/images/products/hydraulic-conveyor.jpg"],
     inStock: true,
   },
@@ -133,6 +139,7 @@ export const products: Product[] = [
     price: "quote",
     priceUnit: "piece",
     specs: { Material: "Mild Steel", Type: "Excavator" },
+    description: "Hydraulic excavator repair services. Hydraulic system repairs and spare parts.",
     images: ["/images/products/hydraulic-excavator.jpeg"],
     inStock: true,
   },
@@ -146,6 +153,7 @@ export const products: Product[] = [
     price: "quote",
     priceUnit: "piece",
     specs: { Capacity: "2500-3000 KG", Brand: "HOPT", Type: "Hydraulic Pump" },
+    description: "Genuine HOPT hydraulic pump replacement part for hand pallet trucks and hydraulic equipment.",
     images: ["/images/products/hopt-hydraulic-pump.png"],
     badge: "Genuine Parts",
     inStock: true,
@@ -158,6 +166,7 @@ export const products: Product[] = [
     price: "quote",
     priceUnit: "piece",
     specs: { Material: "Stainless Steel", Type: "Oil Filter" },
+    description: "Genuine hydraulic oil filter replacement part for all hydraulic equipment maintenance.",
     images: ["/images/products/hydraulic-oil-filter.jpeg"],
     inStock: true,
   },
@@ -169,12 +178,13 @@ export const products: Product[] = [
     price: 350,
     priceUnit: "piece",
     specs: { Capacity: "3000 KG", Color: "Cream", Type: "Drive Wheel" },
+    description: "Genuine nylon drive wheel replacement part for hand pallet trucks and trolleys.",
     images: ["/images/products/nylon-drive-wheel.jpg"],
     badge: "Popular",
     inStock: true,
   },
 
-  // ── Hydraulic Shearing Machine ─────────────────────────────────────────────
+  // ── Hydraulic Shearing Machine (REPAIR SERVICES) ───────────────────────────
   {
     id: "hs-001",
     slug: "hydraulic-shear-cutter",
@@ -183,11 +193,12 @@ export const products: Product[] = [
     price: "quote",
     priceUnit: "piece",
     specs: { Material: "Mild Steel", Type: "Shear Cutter" },
+    description: "Hydraulic shear cutter repair and maintenance services. Spare parts available.",
     images: ["/images/products/hydraulic-shear-cutter.jpeg"],
     inStock: true,
   },
 
-  // ── Dock Leveler ───────────────────────────────────────────────────────────
+  // ── Dock Leveler (REPAIR SERVICES) ─────────────────────────────────────────
   {
     id: "dl-001",
     slug: "hydraulic-dock-leveler",
@@ -196,6 +207,7 @@ export const products: Product[] = [
     price: "quote",
     priceUnit: "piece",
     specs: { Type: "Dock Leveler", Operation: "Hydraulic" },
+    description: "Hydraulic dock leveler repair and maintenance services. Hydraulic system repairs available.",
     images: ["/images/products/hydraulic-dock-leveler.jpeg"],
     inStock: true,
   },

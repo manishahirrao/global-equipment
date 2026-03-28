@@ -10,7 +10,7 @@ export default function InquiryCTABanner() {
             className="text-[#1A1A2E] font-black uppercase text-3xl md:text-4xl leading-tight"
             style={{ fontFamily: "var(--font-barlow-condensed)" }}
           >
-            Ready to Equip Your Warehouse?
+            Need Equipment Repair or Service?
           </h2>
           <p className="text-[#1A1A2E]/80 mt-2 text-sm">
             Call us at{" "}

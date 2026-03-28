@@ -15,9 +15,9 @@ export default function FeaturedProducts() {
     <section className="py-20 md:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="Top Picks"
-          heading="Featured Products"
-          subtext="Our most popular industrial equipment — ready to ship across Madhya Pradesh."
+          eyebrow="Spare Parts Available"
+          heading="Genuine Spare Parts"
+          subtext="We stock genuine spare parts for all material handling equipment repairs — available across Madhya Pradesh."
         />
 
         {/* Mobile: horizontal scroll | Desktop: 3-col grid */}
@@ -31,7 +31,7 @@ export default function FeaturedProducts() {
 
         <div className="mt-10 text-center">
           <Button variant="secondary" href="/products/">
-            View All Products
+            View All Spare Parts
           </Button>
         </div>
       </div>

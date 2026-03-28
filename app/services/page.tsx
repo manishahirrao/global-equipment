@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import InquiryCTABanner from "@/components/sections/InquiryCTABanner";
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "Repair & Maintenance Services | Jay Engineering Bhopal",
   description:
-    "Jay Engineering offers equipment repair, genuine spare parts supply, delivery & installation, and AMC support across Madhya Pradesh. Starting at ₹1,000/Project.",
+    "Jay Engineering offers trolley repair, hand pallet truck service, hydraulic equipment repair, genuine spare parts supply, and AMC support across Bhopal & Madhya Pradesh. Starting at ₹1,000/Project.",
   openGraph: {
-    title: "Services | Jay Engineering Bhopal",
+    title: "Repair & Maintenance Services | Jay Engineering Bhopal",
     images: [{ url: "/og/services.jpg", width: 1200, height: 630 }],
   },
 };
@@ -19,16 +20,34 @@ const services = [
         <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
       </svg>
     ),
-    title: "Equipment Service & Repair",
+    title: "Trolley Repair & Service",
     price: "₹1,000/Project",
-    coverage: "Madhya Pradesh",
+    coverage: "Bhopal & Madhya Pradesh",
     description:
-      "Professional servicing and repair of hand pallet trucks, hydraulic lifts, and material handling equipment. We diagnose and fix hydraulic issues, wheel replacements, fork repairs, and general maintenance to keep your equipment running at peak performance.",
+      "Expert repair and servicing of all types of trolleys including drum lifter trolleys, platform trolleys, and material handling trolleys. We diagnose and fix wheel issues, structural repairs, and general maintenance to keep your trolleys running smoothly.",
     features: [
-      "Hydraulic system inspection & repair",
-      "Wheel and fork replacement",
-      "Load capacity testing",
-      "Preventive maintenance",
+      "Wheel replacement & bearing service",
+      "Structural welding & repairs",
+      "Load capacity restoration",
+      "Preventive maintenance checks",
+    ],
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="32" height="32" aria-hidden="true">
+        <path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+      </svg>
+    ),
+    title: "Hand Pallet Truck Repair",
+    price: "₹1,500/Project",
+    coverage: "Bhopal & Madhya Pradesh",
+    description:
+      "Professional repair and maintenance of hand pallet trucks and high-lift pallet trucks. We fix hydraulic pump issues, wheel replacements, fork repairs, and handle replacements to restore your equipment to optimal working condition.",
+    features: [
+      "Hydraulic pump repair & replacement",
+      "Nylon wheel & bearing replacement",
+      "Fork straightening & repairs",
+      "Handle and control mechanism service",
     ],
   },
   {
@@ -37,11 +56,29 @@ const services = [
         <path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
       </svg>
     ),
-    title: "Genuine Spare Parts Supply",
+    title: "Hydraulic Equipment Repair",
     price: "Contact for pricing",
-    coverage: "All of Madhya Pradesh",
+    coverage: "Bhopal & Madhya Pradesh",
     description:
-      "We stock and supply genuine spare parts for all types of material handling equipment — nylon wheels, hydraulic pumps, seals, forks, and more. Fast delivery to minimize your equipment downtime.",
+      "Complete repair services for hydraulic scissor lifts, drum lifters, stackers, and other hydraulic material handling equipment. We handle hydraulic system repairs, cylinder rebuilds, seal replacements, and electrical troubleshooting.",
+    features: [
+      "Hydraulic cylinder repair & rebuild",
+      "Seal kit replacement",
+      "Hydraulic oil system service",
+      "Electrical control repairs",
+    ],
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="32" height="32" aria-hidden="true">
+        <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+      </svg>
+    ),
+    title: "Spare Parts Supply",
+    price: "Contact for pricing",
+    coverage: "Bhopal & Madhya Pradesh",
+    description:
+      "We stock and supply genuine spare parts for all types of material handling equipment — nylon wheels, hydraulic pumps, seals, forks, bearings, and more. Fast delivery to minimize your equipment downtime during repairs.",
     features: [
       "Nylon drive & load wheels",
       "Hydraulic pumps & cylinders",
@@ -52,36 +89,18 @@ const services = [
   {
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="32" height="32" aria-hidden="true">
-        <path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-      </svg>
-    ),
-    title: "Delivery & Installation",
-    price: "Contact for pricing",
-    coverage: "All of Madhya Pradesh",
-    description:
-      "We deliver and install all equipment we supply — from hand pallet trucks to hydraulic scissor lifts and storage racks. Our team ensures safe, correct installation at your facility.",
-    features: [
-      "Pan-MP delivery network",
-      "On-site installation by trained technicians",
-      "Post-installation testing",
-      "Operator training on request",
-    ],
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="32" height="32" aria-hidden="true">
         <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
       </svg>
     ),
-    title: "AMC & After-Sales Support",
+    title: "AMC & Preventive Maintenance",
     price: "Contact for pricing",
-    coverage: "Madhya Pradesh",
+    coverage: "Bhopal & Madhya Pradesh",
     description:
-      "Annual Maintenance Contracts (AMC) for all equipment categories. We provide scheduled maintenance visits, priority support, and spare parts supply to minimise downtime at your facility.",
+      "Annual Maintenance Contracts (AMC) for all material handling equipment. We provide scheduled maintenance visits, priority repair support, and spare parts supply to minimize downtime at your facility.",
     features: [
-      "Scheduled maintenance visits",
+      "Scheduled preventive maintenance",
       "Priority response for breakdowns",
-      "Genuine spare parts supply",
+      "Genuine spare parts included",
       "Maintenance logs and reports",
     ],
   },
@@ -91,10 +110,19 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <div className="bg-gradient-to-br from-gray-50 to-gray-100 py-20 border-b-4 border-[#F5A623]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative bg-gradient-to-br from-gray-50 to-gray-100 py-20 border-b-4 border-[#F5A623] overflow-hidden">
+        {/* Background image */}
+        <Image
+          src="/images/categories/hand-pallet-truck.webp"
+          alt="Hand pallet truck repair service"
+          fill
+          className="object-cover opacity-15"
+          sizes="100vw"
+        />
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-[#F5A623] text-xs font-semibold uppercase tracking-[0.3em] mb-3">
-            After-Sales Support
+            Repair & Maintenance Services
           </p>
           <h1
             className="text-[#1A1A2E] font-black uppercase text-4xl md:text-6xl leading-none"
@@ -103,7 +131,7 @@ export default function ServicesPage() {
             Our Services
           </h1>
           <p className="text-gray-700 mt-4 max-w-xl text-sm">
-            Equipment repair, genuine spare parts, installation, and AMC across Madhya Pradesh.
+            Expert repair & maintenance for trolleys, hand pallet trucks, hydraulic equipment & material handling machines across Bhopal & Madhya Pradesh.
           </p>
         </div>
       </div>

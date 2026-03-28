@@ -4,20 +4,21 @@ const usps = [
   {
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="28" height="28" aria-hidden="true">
-        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+        <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
       </svg>
     ),
-    title: "GST Registered",
-    desc: "Fully compliant with GST regulations. GST No. 23AARFG4367K1ZY — valid invoices for all purchases.",
+    title: "Expert Mechanics",
+    desc: "Skilled technicians with years of experience repairing all types of material handling equipment and hydraulic systems.",
   },
   {
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="28" height="28" aria-hidden="true">
-        <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
-    title: "Competitive Pricing",
-    desc: "Direct supplier pricing with no middlemen. Best rates on hand pallet trucks, scissor lifts, and storage racks.",
+    title: "State-of-the-Art Workshop",
+    desc: "Modern repair facility equipped with specialized tools and equipment for professional repairs and maintenance.",
   },
   {
     icon: (
@@ -26,17 +27,16 @@ const usps = [
       </svg>
     ),
     title: "7-Day Availability",
-    desc: "Open Monday through Sunday. We're available when your operations need us — no waiting until Monday.",
+    desc: "Open Monday through Sunday, 9 AM to 9 PM. We're available when your operations need us — no waiting until Monday.",
   },
   {
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="28" height="28" aria-hidden="true">
-        <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-        <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        <path d="M13 10V3L4 14h7v7l9-11h-7z" />
       </svg>
     ),
-    title: "After-Sales Service",
-    desc: "Repair, AMC, and installation support across Madhya Pradesh. We stand behind every product we sell.",
+    title: "Fast Turnaround",
+    desc: "Quick diagnosis and repair to minimize your equipment downtime. Genuine spare parts in stock for immediate service.",
   },
 ];
 
@@ -47,7 +47,7 @@ export default function WhyUs() {
         <SectionHeading
           eyebrow="Why Choose Us"
           heading="The Jay Engineering Advantage"
-          subtext="We've been supplying industrial equipment across MP since 2014. Here's what sets us apart."
+          subtext="We've been repairing material handling equipment across Bhopal & MP since 2014. Here's what sets us apart."
           light={false}
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">

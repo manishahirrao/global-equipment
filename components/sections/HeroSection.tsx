@@ -41,18 +41,18 @@ export default function HeroSection() {
             fontSize: "clamp(2.5rem, 8vw, 5rem)",
           }}
         >
-          INDUSTRIAL EQUIPMENT
+          MATERIAL HANDLING
           <br />
-          <span className="text-[#F5A623]">SALES · SERVICE · SPARES</span>
+          <span className="text-[#F5A623]">REPAIR · SERVICE · SPARES</span>
         </h1>
 
         <p className="text-gray-700 text-base md:text-lg mb-10 max-w-2xl mx-auto">
-          Pallet Trucks · Trolleys · Forklifts · Stackers · Repair Services · Spare Parts
+          Trolley Repair · Hand Pallet Truck Service · Hydraulic Equipment Repair · Spare Parts Supply
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button variant="primary" href="/products/">
-            Browse Products
+          <Button variant="primary" href="/services/">
+            Our Services
           </Button>
           <Button variant="ghost" href="/contact/">
             Get Quote
