@@ -3,6 +3,7 @@ import HeroSection from "@/components/sections/HeroSection";
 import StatsBar from "@/components/ui/StatsBar";
 import CategoriesGrid from "@/components/sections/CategoriesGrid";
 import WhyUs from "@/components/sections/WhyUs";
+import TrustedCustomers from "@/components/sections/TrustedCustomers";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import FAQSection from "@/components/sections/FAQSection";
 import InquiryCTABanner from "@/components/sections/InquiryCTABanner";
@@ -58,6 +59,7 @@ export default function HomePage() {
       />
       <HeroSection />
       <StatsBar />
+      <TrustedCustomers />
       <CategoriesGrid />
       <WhyUs />
       <TestimonialsSection />

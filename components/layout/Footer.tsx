@@ -4,7 +4,7 @@ import { company } from "@/data/company";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1A1A2E] text-gray-300">
+    <footer className="bg-[#2D3142] text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {/* Company Info */}
@@ -20,8 +20,7 @@ export default function Footer() {
               
             </div>
             <p className="text-sm leading-relaxed mb-4">
-              Trusted industrial equipment supplier in Madhya Pradesh since 2014. Serving factories,
-              warehouses, and SMEs across MP.
+              Expert repair and maintenance services for material handling equipment in Bhopal, Madhya Pradesh since 2014.
             </p>
             <p className="text-xs">GST: {company.gst}</p>
             <p className="text-xs mt-1">Est. 2014 · Ashoka Garden, Bhopal</p>
@@ -36,8 +35,9 @@ export default function Footer() {
               {[
                 { href: "/", label: "Home" },
                 { href: "/about/", label: "About Us" },
-                { href: "/products/", label: "All Products" },
                 { href: "/services/", label: "Services" },
+                { href: "/products/", label: "Spare Parts" },
+                { href: "/gallery/", label: "Gallery" },
                 { href: "/contact/", label: "Contact" },
               ].map((link) => (
                 <li key={link.href}>
@@ -81,9 +81,9 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-[#2D3142] py-4">
+      <div className="border-t border-[#3D4152] py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs">
-          <p>© 2024 Jay Engineering · GST: {company.gst}</p>
+          <p>© 2026 Jay Engineering · GST: {company.gst}</p>
           <p>Made in India 🇮🇳</p>
         </div>
       </div>
