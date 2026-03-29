@@ -21,10 +21,15 @@ const galleryImages = [
       alt: `Material handling equipment and spare parts ${imageNum}`,
     };
   }).filter(Boolean),
-  ...Array.from({ length: 13 }, (_, i) => ({
-    src: `/images/gallery/parts-1 (${i + 1}).jpeg`,
-    alt: `Industrial equipment and components ${i + 1}`,
-  })),
+  ...Array.from({ length: 13 }, (_, i) => {
+    const imageNum = i + 1;
+    // Skip image 4 as it's been removed
+    if (imageNum === 4) return null;
+    return {
+      src: `/images/gallery/parts-1 (${imageNum}).jpeg`,
+      alt: `Industrial equipment and components ${imageNum}`,
+    };
+  }).filter(Boolean),
 ] as Array<{ src: string; alt: string }>;
 
 export default function GalleryPage() {
