@@ -113,6 +113,14 @@ export default function ContactPage() {
                     <a href={`tel:${company.phone}`} className="text-sm text-[#1C1C1C] hover:text-[#F5A623] transition-colors font-semibold">
                       {company.phone}
                     </a>
+                    {company.phone2 && (
+                      <>
+                        <span className="mx-1 text-sm text-[#1C1C1C]">/</span>
+                        <a href={`tel:${company.phone2}`} className="text-sm text-[#1C1C1C] hover:text-[#F5A623] transition-colors font-semibold">
+                          {company.phone2}
+                        </a>
+                      </>
+                    )}
                     <p className="text-xs text-[#6B7280] mt-1">Call for immediate assistance</p>
                   </dd>
                 </div>

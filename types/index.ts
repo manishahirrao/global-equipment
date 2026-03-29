@@ -42,6 +42,7 @@ export interface CompanyData {
   name: string;
   legalName?: string;
   phone: string;
+  phone2?: string;
   whatsapp: string;
   email: string;
   address: string;

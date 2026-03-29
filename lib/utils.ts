@@ -1,5 +1,6 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
+import { company } from "@/data/company";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -31,7 +32,7 @@ export function buildWhatsAppLink(data: WhatsAppFormData): string {
     `Phone: ${data.phone}`,
     `Message: ${data.message}`,
   ].join("\n");
-  return `https://wa.me/917383560676?text=${encodeURIComponent(text)}`;
+  return `https://wa.me/${company.whatsapp}?text=${encodeURIComponent(text)}`;
 }
 
 export function buildMailtoLink(data: WhatsAppFormData): string {
@@ -47,5 +48,5 @@ export function buildMailtoLink(data: WhatsAppFormData): string {
       `Message: ${data.message}`,
     ].join("\n")
   );
-  return `mailto:info@jayengineering.in?subject=${subject}&body=${body}`;
+  return `mailto:${company.email}?subject=${subject}&body=${body}`;
 }

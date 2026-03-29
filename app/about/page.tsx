@@ -264,6 +264,14 @@ export default function AboutPage() {
                     <a href={`tel:${company.phone}`} className="hover:text-[#F5A623] transition-colors">
                       {company.phone}
                     </a>
+                    {company.phone2 && (
+                      <>
+                        <span className="mx-1">/</span>
+                        <a href={`tel:${company.phone2}`} className="hover:text-[#F5A623] transition-colors">
+                          {company.phone2}
+                        </a>
+                      </>
+                    )}
                   </dd>
                 </div>
                 <div>

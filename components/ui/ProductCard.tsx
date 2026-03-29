@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { Product } from "@/types";
 import { formatINR } from "@/lib/utils";
 import Badge from "./Badge";
+import { company } from "@/data/company";
 
 interface ProductCardProps {
   product: Product;
@@ -11,7 +12,7 @@ interface ProductCardProps {
 export default function ProductCard({ product, showCategory = false }: ProductCardProps) {
   const topSpecs = Object.entries(product.specs).slice(0, 3);
   const whatsappMessage = `Hi Jay Engineering, I need repair service / spare parts for: ${product.name}. Please share details and pricing.`;
-  const whatsappUrl = `https://wa.me/917383560676?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappUrl = `https://wa.me/${company.whatsapp}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <article className="bg-white border border-[#E2E2DC] shadow-[4px_4px_0px_#1A1A2E] flex flex-col group">

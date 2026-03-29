@@ -3,8 +3,9 @@ import type { CompanyData } from "@/types";
 export const company: CompanyData = {
   name: "Jay Engineering",
   legalName: "Shree Engineering",
-  phone: "07383560676",
-  whatsapp: "917383560676",
+  phone: "9981475007",
+  phone2: "9111455315",
+  whatsapp: "919981475007",
   email: "info@jayengineering.in",
   address:
     "Shop No. 03, Near Panjabi Baag, New Ashoka Garden, Ashoka Garden, Bhopal – 462023, Madhya Pradesh",

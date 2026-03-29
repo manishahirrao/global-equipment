@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     question: "How can I request a repair service?",
-    answer: "You can request repair service by calling us at 07383560676, sending a WhatsApp message, or filling out the inquiry form on our website. Our team will respond promptly to schedule an inspection and provide a quote.",
+    answer: "You can request repair service by calling us at 9981475007 / 9111455315, sending a WhatsApp message, or filling out the inquiry form on our website. Our team will respond promptly to schedule an inspection and provide a quote.",
   },
 ];
 

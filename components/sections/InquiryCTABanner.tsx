@@ -16,7 +16,15 @@ export default function InquiryCTABanner() {
             Call us at{" "}
             <a href={`tel:${company.phone}`} className="font-bold underline hover:no-underline">
               {company.phone}
-            </a>{" "}
+            </a>
+            {company.phone2 && (
+              <>
+                {" / "}
+                <a href={`tel:${company.phone2}`} className="font-bold underline hover:no-underline">
+                  {company.phone2}
+                </a>
+              </>
+            )}{" "}
             or send an inquiry below.
           </p>
         </div>

@@ -116,7 +116,7 @@ export default function CookiePolicyPage() {
             <div className="bg-gray-50 border-l-4 border-[#F5A623] p-4">
               <p className="text-[#1A1A2E] font-semibold mb-2">{company.name}</p>
               <p className="text-[#6B7280] text-sm mb-1">{company.address}</p>
-              <p className="text-[#6B7280] text-sm mb-1">Phone: {company.phone}</p>
+              <p className="text-[#6B7280] text-sm mb-1">Phone: {company.phone}{company.phone2 ? ` / ${company.phone2}` : ""}</p>
               <p className="text-[#6B7280] text-sm">Email: {company.email}</p>
             </div>
           </section>

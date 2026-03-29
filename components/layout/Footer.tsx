@@ -77,12 +77,17 @@ export default function Footer() {
             <address className="not-italic space-y-3 text-sm">
               <p className="leading-relaxed">{company.address}</p>
               <p>
-                <a
-                  href={`tel:${company.phone}`}
-                  className="hover:text-[#F5A623] transition-colors"
-                >
+                <a href={`tel:${company.phone}`} className="hover:text-[#F5A623] transition-colors">
                   {company.phone}
                 </a>
+                {company.phone2 && (
+                  <>
+                    <span className="mx-1">/</span>
+                    <a href={`tel:${company.phone2}`} className="hover:text-[#F5A623] transition-colors">
+                      {company.phone2}
+                    </a>
+                  </>
+                )}
               </p>
               <p>
                 <a

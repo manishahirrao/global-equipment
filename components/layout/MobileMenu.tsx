@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { company } from "@/data/company";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -178,11 +179,19 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           <div className="text-center space-y-2">
             <p className="text-white/70 text-xs uppercase tracking-wider">Contact Us</p>
             <a
-              href="tel:07383560676"
+              href={`tel:${company.phone}`}
               className="block text-[#F5A623] font-bold text-lg hover:text-white transition-colors"
             >
-              073 8356 0676
+              {company.phone}
             </a>
+            {company.phone2 && (
+               <a
+                 href={`tel:${company.phone2}`}
+                 className="block text-[#F5A623] font-bold text-lg hover:text-white transition-colors mt-1"
+               >
+                 {company.phone2}
+               </a>
+            )}
             <p className="text-white/50 text-xs">Mon - Sun: 9:00 AM - 9:00 PM</p>
           </div>
           <Link
